@@ -16,9 +16,9 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: "Shantell Sans", cursive;
-  color: #292B2A;
-  background: #52665B;
-  overflow : hidden;
+  color: #000000;
+  background: #f7f7f7;
+  
 }
 
 ul { 
@@ -46,8 +46,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #F3F0E8; /* Cambia por el color de fondo de tu marca */
-  border-bottom: 1px solid #e5e7eb;
+  background-color: #f4e7c3; /* Cambia por el color de fondo de tu marca */
+  border-bottom: 1px solid #ffffff;
 }
 
 .header-inicio {
@@ -93,14 +93,14 @@ img {
 
 .nav-records-shop a {
   text-decoration: none;
-  color: #373635;
+  color: #121212;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 
 .nav records-shop a:hover {
-  color: #f1e2ea; /* Color principal de  TU MARCA*/
+  color: #f4f4f4; /* Color principal de  TU MARCA*/
 }
 
 /* Botón de WhatsApp */
@@ -111,7 +111,7 @@ img {
   padding: 0.65rem 1.25rem;
   border: none;
   border-radius: 9999px;
-  background-color: #2563eb; /* Ajusta al color de tu marca */
+  background-color: #c8ccd2; /* Ajusta al color de tu marca */
   color: #000000;
   font-weight: 600;
   cursor: pointer;
@@ -155,7 +155,7 @@ img {
   border: none;
   border-radius: 9999px;
   background-color: #000000; /* Ajusta al color de tu marca */
-  color: #5c3152;
+  color: #fdfdfd;
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -437,7 +437,7 @@ h1, h2, h3 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 .product-card {
-  background: #ffffff;
+  background: #f4e7c3;
   border: 1px solid var(--line);
   border-radius: 24px;
   overflow: hidden;
@@ -478,7 +478,7 @@ h1, h2, h3 {
 /* Configuraciones del diferenciadores*/
 
 .Unicos{
-  background-color: #525e50;
+  background-color: #f4e7c3;
 
 }
 
@@ -561,6 +561,53 @@ h1, h2, h3 {
   .carousel-controls { display: none; }
 }
   
+/*Contacto*/
+
+.contact-panel {
+  display: grid;
+  gap: 2rem;
+  background: #f8f0df;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+.contact-text .btn { margin-top: 1.8rem; width: 100%; }
+.contact-info {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.04);
+}
+.contact-info ul { display: flex; flex-direction: column; gap: 1.2rem; }
+.contact-info li { display: flex; align-items: center; gap: .75rem; }
+.contact-info i {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0efed;
+  color: var(--coral-dark);
+  flex-shrink: 0;
+}
+.contact-info a { font-weight: 700; color: var(--coral-dark); text-decoration: underline; text-decoration-color: #cfa092; }
+
+
+@media (min-width: 900px) {
+  .contact-panel { grid-template-columns: 1.1fr .9fr; padding: 2.5rem; }
+  .contact-text .btn { width: auto; }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 
 
@@ -575,7 +622,7 @@ h1, h2, h3 {
   display: inline-flex;
 }
 
-.tag-light { background: rgba(255,255,255,.2);
+.tag-light { background: rgba(245, 241, 241, 0.2);
    color: #fff;
    }
 section { 
