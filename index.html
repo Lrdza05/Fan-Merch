@@ -172,7 +172,7 @@
               <h3>Merch</h3>
               <p class="price">$755 MXN</p>
               <p class="description">Camisa Edicion Especial Navideña.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver todo</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Favorito de Fans')">Ver todo</button>
             </div>
           </article>
           <!--PRODUCTO 2-->
@@ -184,7 +184,7 @@
               <h3>Vinilo</h3>
               <p class="price">$1400 MXN</p>
               <p class="description">Vinilo edicion especial 2 años.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver todo</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Nuevo')">Ver todo</button>
             </div>
           </article>
         <!--PRODUCTO 3-->
@@ -192,11 +192,11 @@
           <article class="product-card reveal">
             <img src="img/merch4.png" alt="Camisa navideña de Artista">
             <div class="product-body">
-              <span class="tag">Sueter</span>
-              <h3>Vinilo</h3>
+              <span class="tag">Merch</span>
+              <h3>Sueter</h3>
               <p class="price">$800 MXN</p>
               <p class="description">La mejor merch.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver todos</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Merch')">Ver todos</button>
             </div>
           </article>
           </div>
@@ -325,7 +325,8 @@
           <ul>
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/l._rdza/" target="_blank" rel="noopener noreferrer">@l._rdza</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Shop Records</a></li>
-            <li><i data-lucide="mail"></i> <a href="mailto:hola@dulcedetalle.mx">l.rodriguez040@ebc.edu.mx
+            <li><i data-lucide="mail"></i> <a href="mailto:hola@dulcedetalle.mx">l.rodriguez040@ebc.edu.mx</a></li>
+            <li><i data-lucide="Map"></i> <a href="https://maps.app.goo.gl/WL1TqL1rj5NnoyQM9">Polanco</a></li>
 </a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 20:00</li>
           </ul>
@@ -344,6 +345,79 @@
     <p>© <span id="current-year"></span> Shop Records. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+  <!--MODAL PARA LOS PRODUCTOS O SEVICIOS , ETC-->
+
+ <div id="modal-Favorito de Fans" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Favorito de Fans-Title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="/img/merch2.png" alt="Playera Edicion Navideña.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Favorito de Fans')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Favorito de Fans-title">Playera navideña</h2>
+        <p class="price">$755 MXN</p>
+        <p>Playera Navideña Sabrina Carpenter.</p>
+        <h3>Merch Exclusiva</h3>
+        <ul>
+          <li>Playera Navideña</li>
+          <li>Exclusivos</li>
+          <li>Color de Azul</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero apartar la Playera Navideña')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+<div id="modal-Nuevo" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Nuevo-Title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="/img/merch6.png" alt="Vinio edición especial 2 años.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Nuevo')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Nuevo">Vinio edición especial 2 años</h2>
+        <p class="price">$1400 MXN</p>
+        <p>Vinilo Edición Limitada.</p>
+        <h3>Limitados</h3>
+        <ul>
+          <li>Vinilo</li>
+          <li>Exclusivos</li>
+          <li>2 anniversario</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero apartar el vinilo')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-Merch" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Merch-Title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="/img/merch4.png" alt="Sueter.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Merch')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Nuevo">Sueter Exclusivo</h2>
+        <p class="price">$800 MXN</p>
+        <p>La mejor merch.</p>
+        <h3>Limitados</h3>
+        <ul>
+          <li>Sueter</li>
+          <li>Exclusivos</li>
+          <li>Merch</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero apartar el sueter')">Pedir por WhatsApp</button>
+    </div>
+  </div>
+
+
+
+
+
+
 
   <script src="js/script.js"></script>
 
